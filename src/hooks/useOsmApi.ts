@@ -31,17 +31,11 @@ export default function useOsmApi({
 
   const baseUrl =
     cached || tileNumber
-      ? env.NEXT_PUBLIC_OSM_API_TILE_BACKEND_URL?.replace(
+      ? (env.NEXT_PUBLIC_OSM_API_TILE_BACKEND_URL || "https://ac-o-{n}.global.ssl.fastly.net/api/v1").replace(
           /\{n}/,
           String(tileNumber),
         )
-      : env.NEXT_PUBLIC_OSM_API_BACKEND_URL;
-
-  if (!baseUrl) {
-    throw new Error(
-      "OSM base url not set. Please set NEXT_PUBLIC_ACCESSIBILITY_CLOUD_APP_TOKEN and NEXT_PUBLIC_OSM_API_BACKEND_URL.",
-    );
-  }
+      : (env.NEXT_PUBLIC_OSM_API_BACKEND_URL || "https://osm-api.wheelmap.tech/api/v1");
 
   return { baseUrl, appToken };
 }
