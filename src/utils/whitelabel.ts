@@ -6,15 +6,41 @@ export async function getWhitelabelConfig(hostname: string) {
 
   const url = `${baseUrl}/apps/${sanitizeHostname(hostname)}.json?appToken=${appToken}`;
 
-  const response = await fetch(url);
+  try {
+    const response = await fetch(url);
 
-  if (!response.ok) {
-    throw new Error(
-      `Failed to fetch whitelabel config from ${url}: ${response.status} ${response.statusText}`,
+    if (response.ok) {
+      return await response.json();
+    }
+
+    console.warn(
+      `Failed to fetch whitelabel config from ${url}: ${response.status} ${response.statusText}. Using fallback config for Abkhazia.`
     );
+  } catch (error) {
+    console.error(`Error fetching whitelabel config, using Abkhazia fallback:`, error);
   }
 
-  return await response.json();
+  // Fallback config for Abkhazia localization
+  return {
+    _id: "goapsny-fallback-id",
+    organizationId: "abkhazia-org",
+    name: "GoApsny",
+    tokenString: "fallback-token",
+    clientSideConfiguration: {
+      branding: {
+        colors: {
+          primary: "#1b5e20", // Темно-зеленый (Dark Green)
+        },
+      },
+      textContent: {
+        product: {
+          name: { ru: "GoApsny", en: "GoApsny" },
+          claim: { ru: "Карта доступности", en: "Accessibility Map" },
+          description: { ru: "Карта доступных мест", en: "Accessible places map" },
+        },
+      },
+    },
+  };
 }
 
 export function sanitizeHostname(hostnameOrIPAddress: string) {

@@ -6,9 +6,6 @@ import {
 import { headers } from "next/headers";
 
 export function getLanguageTagFromAcceptLanguageHeaders(): LanguageTag {
-  return getMostPreferableLanguageTag(
-    getILanguageTagsFromAcceptLanguageHeader(
-      String(headers().get("accept-language")),
-    ),
-  );
+  // Force Russian language as requested locally
+  return "ru" as LanguageTag;
 }

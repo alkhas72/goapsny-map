@@ -33,9 +33,9 @@ const appStateConfig = {
     legacy: parseLegacyMapPositionQueryParameter,
     serializer: serializeMapPosition,
     defaultValue: {
-      latitude: 52.5,
-      longitude: 13.3,
-      zoom: 10,
+      latitude: 43.0033, // Sukhumi, Abkhazia
+      longitude: 41.0153,
+      zoom: 12,
     },
     persist: true,
   },
