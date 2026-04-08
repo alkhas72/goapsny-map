@@ -21,14 +21,8 @@ export default function useAccessibilityCloudApi({
   const { tokenString: appToken } = useWhitelabel();
 
   const baseUrl = cached
-    ? env.NEXT_PUBLIC_ACCESSIBILITY_CLOUD_BASE_URL
-    : env.NEXT_PUBLIC_ACCESSIBILITY_CLOUD_UNCACHED_BASE_URL;
-
-  if (!baseUrl) {
-    throw new Error(
-      "Accessibility Cloud base url not set. Please set NEXT_PUBLIC_ACCESSIBILITY_CLOUD_BASE_URL and NEXT_PUBLIC_ACCESSIBILITY_CLOUD_UNCACHED_BASE_URL.",
-    );
-  }
+    ? env.NEXT_PUBLIC_ACCESSIBILITY_CLOUD_BASE_URL || "https://accessibility-cloud.com"
+    : env.NEXT_PUBLIC_ACCESSIBILITY_CLOUD_UNCACHED_BASE_URL || "https://accessibility-cloud.com";
 
   return { baseUrl, appToken };
 }
