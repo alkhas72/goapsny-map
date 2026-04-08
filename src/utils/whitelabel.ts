@@ -39,6 +39,10 @@ export async function getWhitelabelConfig(hostname: string) {
           description: { ru: "Карта доступных мест", en: "Accessible places map" },
         },
       },
+      meta: {
+        twitter: {},
+        facebook: {},
+      },
     },
   };
 }
