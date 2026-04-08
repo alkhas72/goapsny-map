@@ -21,8 +21,8 @@ export default function useAccessibilityCloudApi({
   const { tokenString: appToken } = useWhitelabel();
 
   const baseUrl = cached
-    ? env.NEXT_PUBLIC_ACCESSIBILITY_CLOUD_BASE_URL || "https://accessibility-cloud.com"
-    : env.NEXT_PUBLIC_ACCESSIBILITY_CLOUD_UNCACHED_BASE_URL || "https://accessibility-cloud.com";
+    ? env.NEXT_PUBLIC_ACCESSIBILITY_CLOUD_BASE_URL || "https://v2.accessibility.cloud"
+    : env.NEXT_PUBLIC_ACCESSIBILITY_CLOUD_UNCACHED_BASE_URL || "https://v2.accessibility.cloud";
 
   return { baseUrl, appToken };
 }
