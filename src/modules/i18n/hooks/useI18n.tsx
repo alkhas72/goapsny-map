@@ -64,11 +64,11 @@ export function I18nContextProvider({
 
   useEffect(() => {
     if (!env.NEXT_PUBLIC_TRANSIFEX_NATIVE_TOKEN) {
-      throw new Error(
-        "Environment variable NEXT_PUBLIC_TRANSIFEX_NATIVE_TOKEN not set!",
+      console.warn(
+        "Environment variable NEXT_PUBLIC_TRANSIFEX_NATIVE_TOKEN not set! Using dummy token.",
       );
     }
-    initTransifex(env.NEXT_PUBLIC_TRANSIFEX_NATIVE_TOKEN);
+    initTransifex(env.NEXT_PUBLIC_TRANSIFEX_NATIVE_TOKEN || "1/dummy");
     setLanguageTag(currentLanguageTag);
   }, []);
 
