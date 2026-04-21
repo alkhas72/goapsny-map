@@ -48,7 +48,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       defaultTheme="system"
     >
       <RadixTheme
-        accentColor="indigo"
+        accentColor="blue"
         grayColor="sand"
         radius="small"
         scaling="100%"

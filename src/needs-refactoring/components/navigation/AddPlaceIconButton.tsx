@@ -1,5 +1,5 @@
 import { IconButton, Theme } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { MapPinPlus } from "lucide-react";
 import Link from "next/link";
 import { AppStateAwareLink } from "~/modules/app-state/components/AppStateAwareLink";

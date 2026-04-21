@@ -1,5 +1,5 @@
 import { Button } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { omit } from "lodash";
 import { Globe, MapPin } from "lucide-react";
 import Link from "next/link";

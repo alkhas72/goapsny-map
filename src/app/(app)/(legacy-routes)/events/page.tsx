@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Flex, Heading, Text } from "@radix-ui/themes";
-import { T } from "@transifex/react";
+import { T } from "~/modules/i18n/utils/TComponent";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { PrimaryButton } from "~/components/button/PrimaryButton";

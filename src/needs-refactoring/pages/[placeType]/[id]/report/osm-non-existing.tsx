@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type { ReactElement } from "react";
 import { DefaultLayout } from "~/layouts/DefaultLayout";
 import { ReportOSM } from "./osm-position";

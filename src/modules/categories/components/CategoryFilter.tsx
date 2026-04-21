@@ -5,12 +5,30 @@ import {
   Theme,
   VisuallyHidden,
 } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { ChevronDown } from "lucide-react";
 import { type FC, type SVGAttributes, useRef, useState } from "react";
 import styled from "styled-components";
 import { useCategoryFilter } from "~/modules/categories/hooks/useCategoryFilter";
 import { getTopLevelCategoryList } from "~/modules/categories/utils/display";
+
+const ruCategories: Record<string, string> = {
+  "Shopping": "Магазины",
+  "Food & Drinks": "Еда и напитки",
+  "Transport": "Транспорт",
+  "Leisure": "Отдых",
+  "Tourism": "Туризм",
+  "Accommodation": "Отели",
+  "Hotels": "Отели",
+  "Education": "Обучение",
+  "Public Institutions": "Официально",
+  "Health": "Здоровье",
+  "Financial": "Финансы",
+  "Sport": "Спорт",
+  "Toilets": "Туалеты"
+};
+
+const translateCategory = (nameStr: string) => ruCategories[nameStr] || nameStr;
 
 const CategoryList = styled.menu`
   display: flex;
@@ -45,16 +63,15 @@ export function CategoryFilter() {
     !isFilteringActive && (
       <ScrollArea>
         <VisuallyHidden id="category-filter-description" aria-hidden>
-          {t(
-            "Filter places on the map by selecting one of the following place categories:",
-          )}
+          Фильтры мест на карте по категориям:
         </VisuallyHidden>
         <Theme asChild radius="full">
           <CategoryList
-            aria-label={t("Place Category Filters")}
+            aria-label="Фильтры категорий"
             aria-describedby={"category-filter-description"}
           >
             {mainCategories.map(({ id, name, icon }) => {
+              const translatedName = translateCategory(name());
               const Icon = icon as FC<SVGAttributes<SVGSVGElement>>;
               return (
                 <li key={id}>
@@ -66,7 +83,7 @@ export function CategoryFilter() {
                     onClick={() => filter(id)}
                   >
                     {Icon && <Icon fill="currentColor" aria-hidden />}
-                    {name()}
+                    {translatedName}
                   </StyledButton>
                 </li>
               );
@@ -88,17 +105,18 @@ export function CategoryFilter() {
                       highContrast
                       size="1"
                     >
-                      {t("More…")}
+                      Ещё...
                       <ChevronDown size={16} aria-hidden />
                     </StyledButton>
                   </DropdownMenu.Trigger>
                   <DropdownMenu.Content>
                     {categoriesInMenu.map(({ id, name, icon }) => {
+                      const translatedNameMenu = translateCategory(name());
                       const Icon = icon as FC<SVGAttributes<SVGSVGElement>>;
                       return (
                         <DropdownMenu.Item key={id} onClick={() => filter(id)}>
                           {Icon && <Icon fill="currentColor" aria-hidden />}
-                          {name()}
+                          {translatedNameMenu}
                         </DropdownMenu.Item>
                       );
                     })}

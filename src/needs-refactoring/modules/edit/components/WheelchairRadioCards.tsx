@@ -1,6 +1,6 @@
 import { Flex, RadioCards, Text } from "@radix-ui/themes";
 import type { CategoryProperties } from "@sozialhelden/core";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React from "react";
 import AccessibleIconMarker from "~/modules/map/components/AccessibleIconMarker";
 import type { YesNoLimitedUnknown } from "~/needs-refactoring/lib/model/ac/Feature";

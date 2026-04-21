@@ -1,6 +1,6 @@
 import { Link2Off } from "lucide-react";
 import { Box, Button, Callout, Code, Text } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import Link from "next/link";
 import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary";
 

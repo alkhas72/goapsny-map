@@ -1,5 +1,5 @@
 import { Button, Flex, Text, Theme, Tooltip } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { forwardRef, type Ref } from "react";
 import styled from "styled-components";
 import NeedsIcon from "~/components/icons/NeedsIcon";
@@ -58,14 +58,8 @@ export const NeedsButton = forwardRef(function NeedsButton(
         size="3"
         aria-label={
           needs.length === 0
-            ? t("Select your needs")
-            : t(
-                "You have {length} needs selected: {selectedNeeds}. Click this button to edit your selection.",
-                {
-                  length: needs.length,
-                  selectedNeeds,
-                },
-              )
+            ? "Выберите ваши потребности"
+            : `Выбрано потребностей: ${needs.length} (${selectedNeeds}). Нажмите, чтобы изменить.`
         }
       >
         {needs.length > 0 && (
@@ -73,7 +67,7 @@ export const NeedsButton = forwardRef(function NeedsButton(
             <span>{needs.length}</span>
           </NumberBadge>
         )}
-        {needs.length === 0 && <Text ml="3">{t("What do you need?")}</Text>}
+        {needs.length === 0 && <Text ml="3">Поиск</Text>}
         {needsWithIcon.length > 0 && (
           <Flex gap="2" ml="3" aria-hidden>
             {needsWithIcon.map(({ label, icon: Icon }) => (

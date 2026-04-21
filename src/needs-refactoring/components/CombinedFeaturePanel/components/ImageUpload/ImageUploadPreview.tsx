@@ -8,7 +8,7 @@ import {
   Strong,
   Text,
 } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React, { type FC, useContext, useState } from "react";
 import styled from "styled-components";
 import { PrimaryButton } from "~/components/button/PrimaryButton";

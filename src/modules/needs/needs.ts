@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type { FC } from "react";
 import { FullyWheelchairAccessibleIcon } from "~/components/icons/mobility/FullyWheelchairAccessibleIcon";
 import { NoDataIcon } from "~/components/icons/mobility/NoDataIcon";
@@ -11,57 +11,49 @@ import { ToiletPresentIcon } from "~/components/icons/toilets/ToiletPresentIcon"
 // everything else including types will be auto-generated based on it.
 const configuredSettings = {
   mobility: {
-    title: () => t("Mobility"),
+    title: () => "Мобильность",
     needs: {
       "no-need": {
-        label: () => t("I have no mobility needs"),
+        label: () => "Нет ограничений",
       },
       "fully-wheelchair-accessible": {
-        label: () => t("Fully wheelchair accessible"),
+        label: () => "Доступно на кресле-коляске",
         help: () =>
-          t(
-            "Entrance has no steps, and all rooms are accessible without steps.",
-          ),
+          "Вход без ступеней, во все помещения можно попасть без препятствий.",
         icon: FullyWheelchairAccessibleIcon,
       },
       "partially-wheelchair-accessible": {
-        label: () => t("Partially wheelchair accessible"),
+        label: () => "Частично доступно",
         help: () =>
-          t(
-            "Entrance has one step with max. 3 inches height, most rooms are without steps.",
-          ),
+          "На входе одна ступенька до 7 см, в большинство комнат можно попасть без препятствий.",
         icon: PartiallyWheelchairAccessibleCombinationIcon,
       },
       "not-wheelchair-accessible": {
-        label: () => t("Not wheelchair accessible"),
+        label: () => "Недоступно",
         help: () =>
-          t(
-            "Entrance has a high step or several steps, none of the rooms are accessible.",
-          ),
+          "Вход имеет высокую ступеньку или несколько ступенек, в помещения нельзя попасть.",
         icon: NotWheelchairAccessibleIcon,
       },
       "no-data": {
-        label: () => t("No wheelchair info yet"),
+        label: () => "Нет информации",
         help: () =>
-          t(
-            "There is no information available about wheelchair accessibility.",
-          ),
+          "Нет информации о доступности для кресел-колясок.",
         icon: NoDataIcon,
       },
     },
   },
   toilet: {
-    title: () => t("Toilets"),
+    title: () => "Туалеты",
     needs: {
       "no-need": {
-        label: () => t("I have no toilet needs"),
+        label: () => "Нет ограничений",
       },
       "fully-wheelchair-accessible": {
-        label: () => t("Fully wheelchair accessible toilet"),
+        label: () => "Туалет для инвалидов",
         icon: FullyWheelchairAccessibleToiletIcon,
       },
       "toilet-present": {
-        label: () => t("Has a toilet"),
+        label: () => "Есть туалет",
         icon: ToiletPresentIcon,
       },
       // Would be nice, but we currently have no way to filter for it

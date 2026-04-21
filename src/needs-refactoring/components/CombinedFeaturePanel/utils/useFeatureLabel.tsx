@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { compact } from "lodash";
 import * as React from "react";
 import { useTranslations } from "~/modules/i18n/hooks/useTranslations";

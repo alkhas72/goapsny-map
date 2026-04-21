@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import * as React from "react";
 import { toast } from "react-toastify";
 import { SWRConfig, type SWRConfiguration } from "swr";

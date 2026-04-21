@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { isAccessibilityCloudId } from "../../typing/discriminators/isAccessibilityCloudId";
 import {
   getOSMRDFComponents,

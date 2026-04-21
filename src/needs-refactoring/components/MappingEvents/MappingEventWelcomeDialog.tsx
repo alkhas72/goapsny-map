@@ -1,5 +1,5 @@
 import { Dialog, Flex } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import * as queryString from "query-string";

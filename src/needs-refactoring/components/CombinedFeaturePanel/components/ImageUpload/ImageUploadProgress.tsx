@@ -1,5 +1,5 @@
 import { Box, Grid, Progress, Text } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React, { type FC } from "react";
 import { ImageUploadProgressItem } from "~/needs-refactoring/components/CombinedFeaturePanel/components/ImageUpload/ImageUploadProgressItem";
 

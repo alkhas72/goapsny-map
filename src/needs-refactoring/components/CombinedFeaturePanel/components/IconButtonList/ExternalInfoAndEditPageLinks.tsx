@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import Link from "next/link";
 import useDocumentSWR from "~/needs-refactoring/lib/fetchers/ac/useDocumentSWR";
 import type ISource from "~/needs-refactoring/lib/model/ac/ISource";

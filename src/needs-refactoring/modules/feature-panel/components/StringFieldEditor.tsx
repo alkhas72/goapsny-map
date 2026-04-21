@@ -7,7 +7,7 @@ import {
   VisuallyHidden,
 } from "@radix-ui/themes";
 import { supportedLanguageTagsOptions } from "@sozialhelden/core";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Info } from "lucide-react";
 import type React from "react";
 import { useEffect, useMemo, useRef, useState } from "react";

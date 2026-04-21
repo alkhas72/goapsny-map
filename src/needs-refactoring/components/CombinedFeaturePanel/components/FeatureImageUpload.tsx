@@ -1,5 +1,5 @@
 import { Button, Dialog, Flex } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Camera } from "lucide-react";
 import React, {
   createContext,

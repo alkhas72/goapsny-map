@@ -1,5 +1,5 @@
 import type { EquipmentProperties } from "@sozialhelden/a11yjson";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type { FeatureCollection, Point } from "geojson";
 import type { YesNoLimitedUnknown, YesNoUnknown } from "./Feature";
 

@@ -1,5 +1,5 @@
 import { Button } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { useSession } from "next-auth/react";
 import React, { useContext, useState } from "react";
 import { toast } from "react-toastify";

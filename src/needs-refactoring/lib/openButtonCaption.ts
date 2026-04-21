@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 
 // The naming of `sourceNameString` is to have a consistent translation on transifex for all 'open on ...' links.
 export default function openButtonCaption(sourceNameString: string) {

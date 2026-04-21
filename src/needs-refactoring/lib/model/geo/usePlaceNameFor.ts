@@ -1,5 +1,5 @@
 import type { CategoryProperties } from "@sozialhelden/core";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { useTranslations } from "~/modules/i18n/hooks/useTranslations";
 import type { Translations } from "~/modules/i18n/utils/translations";
 import useEquipmentInfoDescription from "~/needs-refactoring/lib/useEquipmentInfoDescription";

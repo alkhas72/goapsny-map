@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { ChevronRight } from "lucide-react";
 import { Badge, Button, Card, Flex, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";

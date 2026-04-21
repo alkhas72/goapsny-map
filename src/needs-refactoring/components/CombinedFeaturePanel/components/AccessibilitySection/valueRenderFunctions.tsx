@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import Color from "colorjs.io"; // biome-ignore lint/style/useImportType: The import is correct, React is used extensively here.
 import React from "react";
 import { useDarkMode } from "~/hooks/useTheme";

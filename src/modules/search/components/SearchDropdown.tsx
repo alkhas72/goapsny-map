@@ -1,5 +1,5 @@
 import { Flex, ScrollArea, Spinner } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React, { forwardRef, type ReactNode, type Ref } from "react";
 import styled from "styled-components";
 

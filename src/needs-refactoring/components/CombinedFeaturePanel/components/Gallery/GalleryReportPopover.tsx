@@ -7,7 +7,7 @@ import {
   Strong,
   Text,
 } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import { ErrorResult } from "~/components/results/ErrorResult";
 import { SuccessResult } from "~/components/results/SuccessResult";

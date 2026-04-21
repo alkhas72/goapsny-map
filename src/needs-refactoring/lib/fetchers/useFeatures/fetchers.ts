@@ -1,5 +1,5 @@
 import type { PlaceInfo } from "@sozialhelden/a11yjson";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type {
   TypeTaggedOSMFeature,
   TypeTaggedPlaceInfo,

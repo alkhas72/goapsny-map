@@ -1,5 +1,5 @@
 import { Button, Spinner } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React, { type FC, type ReactNode, useContext, useState } from "react";
 import { getLayout } from "~/layouts/DefaultLayout";
 import { AppStateAwareLink } from "~/modules/app-state/components/AppStateAwareLink";

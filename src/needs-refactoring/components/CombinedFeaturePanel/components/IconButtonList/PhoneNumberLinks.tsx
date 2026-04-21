@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { uniq } from "lodash";
 import Link from "next/link";
 import type { AnyFeature } from "~/needs-refactoring/lib/model/geo/AnyFeature";

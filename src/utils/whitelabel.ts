@@ -29,8 +29,14 @@ export async function getWhitelabelConfig(hostname: string) {
     clientSideConfiguration: {
       branding: {
         colors: {
-          primary: "#1b5e20", // Темно-зеленый (Dark Green)
+          primary: "#008EE0", // GoApsny Professional Blue
         },
+        vectorLogoSVG: {
+          data: "<svg viewBox=\"0 0 320 80\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"0\" y=\"60\" font-family=\"Inter, system-ui, sans-serif\" font-weight=\"800\" font-size=\"58\" fill=\"#1A1F2C\">G</text><path d=\"M68 15c-11.6 0-21 9.4-21 21s21 34 21 34 21-22.4 21-34-9.4-21-21-21zm0 30c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9z\" fill=\"#008EE0\"/><text x=\"95\" y=\"60\" font-family=\"Inter, system-ui, sans-serif\" font-weight=\"800\" font-size=\"58\" fill=\"#1A1F2C\">Apsny</text></svg>"
+        },
+        vectorIconSVG: {
+          data: "<svg viewBox=\"0 0 60 80\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M30 15c-11.6 0-21 9.4-21 21s21 34 21 34 21-22.4 21-34-9.4-21-21-21zm0 30c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9z\" fill=\"#008EE0\"/></svg>"
+        }
       },
       textContent: {
         product: {

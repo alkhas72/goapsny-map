@@ -1,5 +1,5 @@
 import { Box, Strong, Text } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React, { type FC, useCallback, useContext } from "react";
 import { useDropzone } from "react-dropzone";
 import styled from "styled-components";

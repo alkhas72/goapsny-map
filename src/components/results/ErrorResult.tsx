@@ -1,5 +1,5 @@
 import { Flex, Strong, Text } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { TriangleAlert } from "lucide-react";
 
 export function ErrorResult({

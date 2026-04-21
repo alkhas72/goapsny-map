@@ -1,5 +1,5 @@
 import { Box, Flex, Grid, Text } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type React from "react";
 import { useTranslations } from "~/modules/i18n/hooks/useTranslations";
 import EditDescriptionDropdownMenu from "~/needs-refactoring/components/CombinedFeaturePanel/components/AccessibilitySection/EditDescriptionDropdownMenu";

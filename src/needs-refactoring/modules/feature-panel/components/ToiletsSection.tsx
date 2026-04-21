@@ -6,7 +6,7 @@ import {
   Text,
   VisuallyHidden,
 } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React from "react";
 import { useTranslations } from "~/modules/i18n/hooks/useTranslations";
 import EditDescriptionDropdownMenu from "~/needs-refactoring/components/CombinedFeaturePanel/components/AccessibilitySection/EditDescriptionDropdownMenu";

@@ -1,5 +1,5 @@
 import { Flex, IconButton, RadioGroup, Text } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { type RefObject, forwardRef, useState } from "react";
 import styled from "styled-components";
 import { useNeeds } from "~/modules/needs/contexts/NeedsContext";

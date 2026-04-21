@@ -1,7 +1,7 @@
 import { Search, X } from "lucide-react";
 
 import { Flex, IconButton } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import {
   type ChangeEventHandler,
   type KeyboardEventHandler,
@@ -133,7 +133,7 @@ export function SearchFormField({
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
         type="search"
-        placeholder={t("Search for place or address")}
+        placeholder="Поиск места или адреса"
         {...props}
       />
       {input ? (
@@ -143,7 +143,7 @@ export function SearchFormField({
             size="3"
             color="gray"
             onClick={reset}
-            aria-label={t("Clear search")}
+            aria-label="Очистить поиск"
           >
             <X size={18} aria-hidden />
           </IconButton>

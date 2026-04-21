@@ -1,5 +1,5 @@
 import { Button } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React from "react";
 
 export const EmailRegEx = /(.+)@(.+){2,}\.(.+){2,}/;

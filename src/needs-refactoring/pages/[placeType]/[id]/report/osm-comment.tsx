@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type { ReactElement } from "react";
 import { useWhitelabel } from "~/hooks/useWhitelabel";
 import { DefaultLayout } from "~/layouts/DefaultLayout";

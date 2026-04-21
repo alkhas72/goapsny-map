@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type Color from "colorjs.io";
 import { compact, uniq } from "lodash";
 

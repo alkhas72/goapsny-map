@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Popover, Skeleton, Text } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { signIn, signOut, useSession } from "next-auth/react";
 import React from "react";
 import Markdown from "~/needs-refactoring/components/shared/Markdown";

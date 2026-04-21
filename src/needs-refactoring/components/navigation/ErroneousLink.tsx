@@ -1,5 +1,5 @@
 import { Badge, Tooltip } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type { IAutoLinkProps } from "./AppLink";
 import MenuItemOrButton from "./MenuItemOrButton";
 

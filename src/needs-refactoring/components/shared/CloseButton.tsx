@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import * as React from "react";
 import styled from "styled-components";
 import { X } from "lucide-react";

@@ -1,7 +1,7 @@
 "use client";
 
 import { Callout, Flex, Spinner, Text } from "@radix-ui/themes";
-import { T } from "@transifex/react";
+import { T } from "~/modules/i18n/utils/TComponent";
 import { CircleAlert } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";

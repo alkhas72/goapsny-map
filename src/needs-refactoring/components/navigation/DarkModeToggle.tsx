@@ -1,5 +1,5 @@
 import { IconButton, Theme } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "~/hooks/useTheme";
 

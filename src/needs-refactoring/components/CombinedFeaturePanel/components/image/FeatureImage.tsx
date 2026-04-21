@@ -1,4 +1,4 @@
-import { t } from "@transifex/native"; // TODO: Re-implement WikimediaCommonsImage support
+import { t } from "~/modules/i18n/utils/tFunction"; // TODO: Re-implement WikimediaCommonsImage support
 
 // TODO: Re-implement WikimediaCommonsImage support
 // TODO: Re-implement logo component (brand/operator/network images)

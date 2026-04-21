@@ -1,5 +1,5 @@
 import { humanize } from "inflection";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type { OSMFeatureCollection } from "../../model/geo/AnyFeature";
 import ResourceError from "../ResourceError";
 

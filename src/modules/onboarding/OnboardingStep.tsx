@@ -7,7 +7,7 @@ import {
   Text,
   VisuallyHidden,
 } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import * as React from "react";
 import { useEffect } from "react";
 import { WhitelabelContext } from "~/hooks/useWhitelabel";
@@ -101,8 +101,8 @@ export const OnboardingStep: React.FC<{
         </Dialog.Close>
 
         <Button size="3" variant="soft" asChild>
-          <a href={faqLink?.url} target="_blank" rel="noopener noreferrer">
-            {t("Learn more")}
+          <a href={faqLink?.url || "https://goapsny.ab"} target="_blank" rel="noopener noreferrer">
+            Хотите узнать больше?
           </a>
         </Button>
       </Flex>
@@ -114,7 +114,7 @@ function AccessibilityCard(props: { value: YesNoLimitedUnknown }) {
   const name = accessibilityName(value);
   const colorName = accessibilityColorName(value);
   const Icon = getAccessibilityIcon(value);
-  const unknownAccessibilityIncentiveText = t("Help out by marking places!");
+  const unknownAccessibilityIncentiveText = "Помогите, отмечая места!";
 
   return (
     <Card asChild>

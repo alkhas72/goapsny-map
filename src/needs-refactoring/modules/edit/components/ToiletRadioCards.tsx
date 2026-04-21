@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, RadioCards, Text } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { ToiletStatusNotAccessible } from "~/needs-refactoring/components/icons/accessibility";
 import ToiletStatusAccessibleIcon from "~/needs-refactoring/components/icons/accessibility/ToiletStatusAccessible";
 import type { YesNoUnknown } from "~/needs-refactoring/lib/model/ac/Feature";

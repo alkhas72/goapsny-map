@@ -23,7 +23,7 @@ import ToiletsSection from "~/needs-refactoring/modules/feature-panel/components
 import WheelchairSection from "~/needs-refactoring/modules/feature-panel/components/WheelchairSection";
 
 import { Flex, Heading, Spinner, VisuallyHidden } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import styled from "styled-components";
 import FeatureHeader from "~/needs-refactoring/components/CombinedFeaturePanel/components/FeatureHeader";
 import { useNextAccessibleToilet } from "~/needs-refactoring/modules/edit/hooks/useNextAccessibleToilet";
@@ -141,7 +141,7 @@ const FeatureDetails = ({
             {generalDescription && (
               <div>
                 <VisuallyHidden>
-                  <Heading as="h2">{t("Description")}</Heading>
+                  <Heading as="h2">Описание</Heading>
                 </VisuallyHidden>
                 <FeatureDescription>
                   {generalDescription.value}
@@ -153,7 +153,7 @@ const FeatureDetails = ({
           <SectionsContainer>
             <Section>
               <VisuallyHidden>
-                <Heading as="h2">{t("Wheelchair section")}</Heading>
+                <Heading as="h2">Доступность для кресла-коляски</Heading>
               </VisuallyHidden>
               <WheelchairSection
                 key="osm_wheelchair"
@@ -164,7 +164,7 @@ const FeatureDetails = ({
             {(osmWheelchairInfo || nextAccessibleToilet) && (
               <Section>
                 <VisuallyHidden>
-                  <Heading as="h2">{t("Toilet section")}</Heading>
+                  <Heading as="h2">Туалет</Heading>
                 </VisuallyHidden>
                 <ToiletsSection
                   key="osm_toilets"
@@ -179,7 +179,7 @@ const FeatureDetails = ({
             )}
             <VisuallyHidden>
               <Heading as="h2">
-                {t("Further Information about this place")}
+                Дополнительная информация
               </Heading>
             </VisuallyHidden>
 
@@ -198,7 +198,7 @@ const FeatureDetails = ({
             <Section>
               <VisuallyHidden>
                 <Heading as="h2">
-                  {t("Image Gallery and Upload of new Images")}
+                  Галерея и загрузка новых фотографий
                 </Heading>
               </VisuallyHidden>
               <FeatureGallery
@@ -214,7 +214,7 @@ const FeatureDetails = ({
             </Section>
             <Section>
               <VisuallyHidden>
-                <Heading as="h2">{t("Further links")}</Heading>
+                <Heading as="h2">Дополнительные ссылки</Heading>
               </VisuallyHidden>
               <StyledIconButtonList
                 key="styled_icon_button_list"

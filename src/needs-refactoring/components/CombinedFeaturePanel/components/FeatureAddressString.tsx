@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { compact, uniq } from "lodash";
 import styled from "styled-components";
 import type { AnyFeature } from "~/needs-refactoring/lib/model/geo/AnyFeature";

@@ -5,7 +5,7 @@ import {
   isOSMFeature,
 } from "~/needs-refactoring/lib/model/geo/AnyFeature";
 import OSMBuildingDetails from "~/needs-refactoring/components/CombinedFeaturePanel/type-specific/building/OSMBuildingDetails";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Heading } from "@radix-ui/themes";
 
 interface Props {

@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { DateTime } from "luxon";
 import opening_hours from "opening_hours";
 import * as React from "react";

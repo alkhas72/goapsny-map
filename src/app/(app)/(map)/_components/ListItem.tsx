@@ -1,5 +1,5 @@
 import { Flex, Text } from "@radix-ui/themes";
-import { T } from "@transifex/react";
+import { T } from "~/modules/i18n/utils/TComponent";
 import { DateTime } from "luxon";
 import * as React from "react";
 import { useMemo } from "react";

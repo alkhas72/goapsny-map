@@ -1,6 +1,6 @@
 import { Button } from "@radix-ui/themes";
 import type { PointGeometry } from "@sozialhelden/a11yjson";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { center } from "@turf/turf";
 import type { MultiPolygon, Point, Polygon } from "geojson";
 import React, { type FC, type ReactElement, useContext } from "react";

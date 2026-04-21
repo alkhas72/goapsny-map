@@ -1,5 +1,5 @@
 import { Box, Card, Flex, Grid, Text, VisuallyHidden } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Check, ExternalLink } from "lucide-react";
 import { type FC, useContext } from "react";
 import styled from "styled-components";

@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import type { FC } from "react";
 import styled from "styled-components";
 import ResourceError from "~/needs-refactoring/lib/fetchers/ResourceError";

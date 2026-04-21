@@ -1,5 +1,5 @@
 import { AspectRatio, Card, Inset, VisuallyHidden } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { type FC, type MouseEventHandler, useContext, useMemo } from "react";
 import styled from "styled-components";
 import AccessibilityCloudImage from "~/components/image/AccessibilityCloudImage";

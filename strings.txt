@@ -1,0 +1,248 @@
+(optional)
+(required)
+({comment})
+,
+/
+1. Criteria
+2. Select
+3. Review
+4. Done
+:
+;
+Accessible sink
+Add a description
+Add a description for this toilet
+Add a description in another language
+Add a new image
+Add info on {sourceNameString}
+Add new image
+Add new location
+Add toilet information
+Always open
+An error occurred
+An error occurred.
+An error occurred. Please try again later!
+April
+Area name
+August
+Back
+Back to the mapping events list
+Basement floor
+Basement {basementFloorNumber}
+CC0 1.0 Universal license
+Call {phoneNumber}
+Cancel
+Center map on mapping event
+Choose a different image
+Clear turning space ≥ 150 cm wide
+Clear turning space ≥ 59 inches
+Clear turning space ≥ 59 inches wide
+Close
+Closed
+Closes {nextChangeDateFormatted}
+Confirm
+Content-Language
+Continue
+Could not load search results.
+December
+Drag an image here to select it
+Edit description
+Edit this description
+Edit this place on OpenStreetMap
+Edit toilet accessibility
+Edit wheelchair accessibility
+Elevator
+Email address
+Enter a description here
+Enter your new description here or edit the existing one:
+Entrance
+Error: 404
+Error: 500
+Error: {error}
+Escalator
+Event date
+Event end date
+Event start date
+Events
+Facility
+February
+Foldable grab rails
+Friday
+Fully
+Go to home page
+Great! Thanks for joining us.
+Ground floor
+HH:mm
+How wheelchair accessible is this place?
+I have more information about this place.
+Image gallery.
+Image shown: {imageDescription}
+Image shows another place.
+Image uploaded successfully!
+Image {numberOfCurrentImage} of {size}
+In operation
+Is the toilet here wheelchair accessible?
+Is there a problem with this place?
+Is this toilet wheelchair accessible?
+It contains useful information on accessibility.
+It was taken by me.
+January
+Join mapping event
+July
+June
+Languages
+Last update: {dateString}
+Leave a note on OpenStreetMap
+Leave mapping event
+Level {levelString}
+Link
+List of languages
+Loading features...
+Loading seems to take a bit longer than usual. Please hold the line…
+Mapped Places
+Mapping Event Numbers
+Mapping event {mappingEventName}
+Mapping events list
+March
+May
+Maybe open
+Meeting point
+Might close {nextChangeDateFormatted}
+Might open {nextChangeDateFormatted}
+Mobile
+Monday
+Most places on {appName} come from OpenStreetMap.
+Next wheelchair-accessible WC
+No
+No editor available for {tagKey}
+No features found.
+No results found!
+Not at all
+November
+OSM API Configuration incomplete, baseUrl or appToken is missing
+October
+Offensive or inappropriate
+Open image
+Open now
+Open on {sourceNameString}
+Opens {nextChangeDateFormatted}
+Other problems
+Out of order
+Outdated
+Page not found
+Part of
+Partially
+Participants
+Photo of the place.
+Please edit this description in the same language.
+Please select the problem you would like to report:
+Please try again later.
+Preview of the just selected image
+Rate wheelchair accessibility
+Report
+Report Image
+Report sent successfully!
+Return home
+Review your selected image
+Room {roomNumber}
+Saturday
+Save
+See website
+Select a language
+Select a language:
+Select an image
+Select image
+Send
+Send report
+Send us an email
+Sending report failed!
+September
+Server error
+Share
+Show more information about {title}
+Sidewalks and Surroundings
+Sign in
+Sign out
+Site map
+Something went wrong. Please let us know if the error persists.
+Sorry, we can't find the page you're looking for.
+Sunday
+Switch to dark mode
+Switch to light mode
+Thank you for contributing. Your edit will be visible soon.
+The place does not exist.
+The place is at the wrong location.
+There was an error uploading your image!
+This email address is not valid.
+This image does not depict this place.
+This image does not show the current state of this place.
+This link needs to be configured correctly.
+This link opens in a new window.
+This place has no known properties.
+Thursday
+To report an image:
+To stay in touch with you, please share your email address with us.
+Toilet
+Toilet Accessibility Editor
+Toilet features
+Tuesday
+Unknown operational status
+Unnamed facility
+Unnamed place
+Upload image
+Upload successful
+Uploading image, please wait...
+Use the following button to select an image:
+Vary
+View on OpenStreetMap
+WC
+Wednesday
+Welcome
+Wheelchair Accessibility Editor
+Wheelchair-height WC seat
+Wheelchair-height toilet seat
+X-Lang
+Yes
+You are participating as {initialEmailAddress}.
+You can remove non-existent places on OpenStreetMap.
+You can use these keys for navigation:
+Your avatar
+Your email address is required!
+Your good deed of the day!
+[Wheelmap] Problem with a place on Wheelmap
+[Wheelmap] Problem with a {categoryName} on Wheelmap
+[Wheelmap] Problem with {placeName} on Wheelmap
+appId
+blue
+ccc HH:mm
+closed
+cyan
+dark
+depth
+div
+gray
+green
+host
+levels
+light
+magenta
+or click the select button.
+orange
+pastel
+place-clicked
+public holiday
+red
+saturated
+school holiday
+starting
+today
+until
+user-agent
+very bright
+very dark
+width
+woff
+woff2
+yellow
+yesterday
+“{text}”

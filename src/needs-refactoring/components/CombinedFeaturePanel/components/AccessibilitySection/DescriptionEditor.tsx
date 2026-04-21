@@ -1,5 +1,5 @@
 import { Callout, Dialog, Flex, Text, TextArea } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Info } from "lucide-react";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import SearchableSelect from "~/needs-refactoring/components/shared/SearchableSelect";

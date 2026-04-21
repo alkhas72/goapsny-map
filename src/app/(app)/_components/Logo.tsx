@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import styled from "styled-components";
 import { AppStateAwareLink } from "~/modules/app-state/components/AppStateAwareLink";
 import { useDarkMode } from "~/hooks/useTheme";
@@ -33,6 +33,8 @@ const LogoWide = styled.span<{ $darkMode?: boolean }>`
     & > svg {
         max-width: 9rem;
         max-height: 2rem;
+        width: 100%;
+        height: auto;
     }
     @media (max-width: 768px) {
         display: none;
@@ -52,6 +54,8 @@ const LogoSquare = styled.span<{ $darkMode?: boolean }>`
     & > svg {
         max-width: 2.2rem;
         max-height: 2.2rem;
+        width: 100%;
+        height: auto;
     }
     @media (min-width: 769px) {
         display: none;

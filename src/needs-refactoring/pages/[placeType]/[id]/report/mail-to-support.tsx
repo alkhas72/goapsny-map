@@ -1,6 +1,6 @@
 import { Button } from "@radix-ui/themes";
 import type { LocalizedString } from "@sozialhelden/a11yjson";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import React, { type FC, useContext } from "react";
 import { useUserAgent } from "~/hooks/useUserAgent";
 import { getLayout } from "~/layouts/DefaultLayout";

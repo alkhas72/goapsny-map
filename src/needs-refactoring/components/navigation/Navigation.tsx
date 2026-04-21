@@ -1,6 +1,6 @@
 import { DropdownMenu, IconButton, Theme } from "@radix-ui/themes";
 import { supportedLanguageTagsOptions } from "@sozialhelden/core";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { MapPinPlus, Menu, Moon, Sun, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -81,7 +81,7 @@ export default function Navigation() {
             variant="soft"
             color="gray"
             size="3"
-            aria-label={isOpen ? t("Close menu") : t("Show menu")}
+            aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
           >
             {isOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
           </IconButton>
@@ -96,7 +96,7 @@ export default function Navigation() {
                     aria-hidden="true"
                     style={{ marginRight: 8 }}
                   />
-                  {primaryLink.label || t("Add new location")}
+                  {primaryLink.label || "Добавить новое место"}
                 </Link>
               </DropdownMenu.Item>
               <DropdownMenu.Item onClick={handleThemeToggle}>
@@ -105,7 +105,7 @@ export default function Navigation() {
                   aria-hidden="true"
                   style={{ marginRight: 8 }}
                 />
-                {t("Change theme")}
+                Сменить тему
               </DropdownMenu.Item>
               <DropdownMenu.Separator />
             </>
@@ -139,7 +139,7 @@ export default function Navigation() {
     ) : null;
 
   return (
-    <StyledNav aria-label={t("Main")}>
+    <StyledNav aria-label="Меню">
       {primaryLinkElement}
       {!isSmallViewport && <DarkModeToggle />}
       {dropdownMenuButton}

@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { useSession } from "next-auth/react";
 import { useContext } from "react";
 import { toast } from "react-toastify";

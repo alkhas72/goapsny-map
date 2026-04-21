@@ -1,5 +1,5 @@
 import { Dialog, Flex } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Pencil } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { PrimaryButton } from "~/components/button/PrimaryButton";

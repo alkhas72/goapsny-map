@@ -1,5 +1,5 @@
 import { Callout } from "@blueprintjs/core";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import Link from "next/link";
 import { useMap } from "~/modules/map/hooks/useMap";
 import { FeatureImageUpload } from "~/needs-refactoring/components/CombinedFeaturePanel/components/FeatureImageUpload";

@@ -1,5 +1,5 @@
 import type { Accessibility } from "@sozialhelden/a11yjson";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import humanizeString from "humanize-string";
 import isPlainObject from "lodash/isPlainObject";
 import * as React from "react";

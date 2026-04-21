@@ -1,5 +1,5 @@
 import { DropdownMenu, IconButton } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Pencil } from "lucide-react";
 import type React from "react";
 import { useRef, useState } from "react";

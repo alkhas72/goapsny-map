@@ -1,5 +1,5 @@
 import { Grid, ScrollArea, Theme, VisuallyHidden } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { Dialog as DialogPrimitive } from "radix-ui";
 import { useEffect, useState } from "react";
 import styled from "styled-components";

@@ -7,7 +7,7 @@ import {
   Text,
   VisuallyHidden,
 } from "@radix-ui/themes";
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import { type FC, useContext } from "react";
 import styled from "styled-components";
 import GalleryReportPopover from "~/needs-refactoring/components/CombinedFeaturePanel/components/Gallery/GalleryReportPopover";

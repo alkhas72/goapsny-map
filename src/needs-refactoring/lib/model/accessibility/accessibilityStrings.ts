@@ -1,4 +1,4 @@
-import { t } from "@transifex/native";
+import { t } from "~/modules/i18n/utils/tFunction";
 import usePreferImperialUnits from "~/modules/i18n/hooks/usePreferImperialUnits";
 import type { YesNoLimitedUnknown, YesNoUnknown } from "../ac/Feature";
 
@@ -8,16 +8,16 @@ export function accessibilityName(
   switch (accessibility) {
     // translator: Long accessibility description for full wheelchair accessibility
     case "yes":
-      return t("Fully");
+      return "Доступно";
     // translator: Long accessibility description for partial wheelchair accessibility
     case "limited":
-      return t("Partially");
+      return "Частично доступно";
     // translator: Long accessibility description for no wheelchair accessibility
     case "no":
-      return t("Not at all");
+      return "Недоступно";
     // translator: Long accessibility description for unknown wheelchair accessibility
     case "unknown":
-      return t("We don't know yet!");
+      return "Неизвестно";
     default:
       return null;
   }
@@ -50,16 +50,16 @@ export function shortAccessibilityName(
   switch (accessibility) {
     // translator: Shortened accessibility description for full wheelchair accessibility (imagine as short answer to the question ‘how accessible is this place?’)
     case "yes":
-      return t("Fully");
+      return "Доступно";
     // translator: Shortened accessibility description for partial wheelchair accessibility (imagine as short answer to the question ‘how accessible is this place?’)
     case "limited":
-      return t("Partially");
+      return "Частично";
     // translator: Shortened accessibility description for no wheelchair accessibility (imagine as short answer to the question ‘how accessible is this place?’)
     case "no":
-      return t("Not at all");
+      return "Недоступно";
     // translator: Shortened accessibility description for unknown wheelchair accessibility (imagine as short answer to the question ‘how accessible is this place?’)
     case "unknown":
-      return t("Unknown");
+      return "Неизвестно";
     default:
       return null;
   }
@@ -71,9 +71,7 @@ export function useAccessibilityDescription(
   switch (accessibility) {
     // translator: Describes criteria for marking places as fully wheelchair accessible on Wheelmap
     case "yes":
-      return t(
-        "Entrance has no steps, important areas are accessible without steps.",
-      );
+      return "Вход без ступеней, важные зоны доступны без ступеней.";
     case "limited":
       return usePreferImperialUnits()
         ? // translator: Describes criteria for marking places as partially wheelchair accessible on Wheelmap, using imperial units
@@ -81,14 +79,10 @@ export function useAccessibilityDescription(
             "Entrance has one step with max. 3 inches height, most areas are without steps.",
           )
         : // translator: Describes criteria for marking places as partially wheelchair accessible on Wheelmap, using metric units
-          t(
-            "Entrance has one step with max. 7 cm height, most areas are without steps.",
-          );
+          "Вход имеет одну ступеньку до 7 см, большинство зон без ступеней.";
     // translator: Describes criteria for marking places as not wheelchair accessible on Wheelmap
     case "no":
-      return t(
-        "Entrance has a high step or several steps, important areas are inaccessible.",
-      );
+      return "Вход имеет высокую ступеньку или несколько ступеней, важные зоны недоступны.";
     default:
       return null;
   }
@@ -98,10 +92,10 @@ export function toiletDescription(accessibility: YesNoUnknown): string | null {
   switch (accessibility) {
     // translator: Long toilet accessibility description on place toolbar if the toilet IS accessible
     case "yes":
-      return t("Wheelchair accessible WC");
+      return "Туалет для инвалидов";
     // translator: Long toilet accessibility description on place toolbar if the toilet is NOT accessible
     case "no":
-      return t("No wheelchair accessible WC");
+      return "Нет туалета для инвалидов";
     default:
       return null;
   }
