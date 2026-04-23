@@ -25,7 +25,7 @@ export async function getWhitelabelConfig(hostname: string) {
     _id: "goapsny-fallback-id",
     organizationId: "abkhazia-org",
     name: "GoApsny",
-    tokenString: "fallback-token",
+    tokenString: "93ab8e1e79c91e7bb99fecd99b7b3003",
     clientSideConfiguration: {
       branding: {
         colors: {
