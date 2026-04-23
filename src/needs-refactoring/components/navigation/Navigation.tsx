@@ -14,6 +14,7 @@ import type { TranslatedAppLink } from "~/needs-refactoring/lib/useAppLink";
 import { useNavigation } from "~/needs-refactoring/lib/useNavigation";
 import { useWindowSize } from "~/needs-refactoring/lib/util/useViewportSize";
 import DarkModeToggle from "./DarkModeToggle";
+import SessionElement from "./SessionElement";
 
 const SMALL_VIEWPORT_BREAKPOINT = 480;
 
@@ -23,7 +24,7 @@ function filterExpertModeLinks(
 ) {
   return links.filter((link) => {
     if (link.tags?.includes("session")) {
-      return isExpertMode;
+      return true;
     }
     return true;
   });
@@ -127,6 +128,8 @@ export default function Navigation() {
           )}
           {isExpertMode && <DropdownMenu.Separator />}
           {menuLinkElements}
+          <DropdownMenu.Separator />
+          <SessionElement asMenuItem />
         </StyledDropdownMenuContent>
       </DropdownMenu.Root>
     </Theme>

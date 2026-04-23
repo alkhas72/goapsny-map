@@ -39,6 +39,7 @@ module.exports = withSvgr({
         tls: "empty",
         child_process: "empty",
         async_hooks: "mock",
+        encoding: false,
       },
     };
     return config;

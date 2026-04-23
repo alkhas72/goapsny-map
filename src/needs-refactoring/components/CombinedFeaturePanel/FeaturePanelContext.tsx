@@ -185,7 +185,7 @@ export function FeaturePanelContextProvider({
   );
   const { highlight, removeHighlight } = useHighlight();
 
-  const id = resultSet?.features?.[0]?.requestedFeature._id;
+  const id = resultSet?.features?.[0]?.requestedFeature?._id;
 
   useEffect(() => {
     if (id) highlight(id);

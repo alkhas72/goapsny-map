@@ -1,4 +1,4 @@
-import { IconButton, Theme } from "@radix-ui/themes";
+import { IconButton, Theme, Tooltip } from "@radix-ui/themes";
 import { t } from "~/modules/i18n/utils/tFunction";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "~/hooks/useTheme";
@@ -20,15 +20,17 @@ export default function DarkModeToggle() {
 
   return (
     <Theme radius="small">
-      <IconButton
-        variant="soft"
-        color="gray"
-        size="3"
-        aria-label={ariaLabel}
-        onClick={handleClick}
-      >
-        <Icon aria-hidden="true" />
-      </IconButton>
+      <Tooltip content={ariaLabel}>
+        <IconButton
+          variant="soft"
+          color="gray"
+          size="3"
+          aria-label={ariaLabel}
+          onClick={handleClick}
+        >
+          <Icon aria-hidden="true" />
+        </IconButton>
+      </Tooltip>
     </Theme>
   );
 }
