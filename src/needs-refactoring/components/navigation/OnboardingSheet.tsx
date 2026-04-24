@@ -133,7 +133,7 @@ export default function OnboardingSheet() {
           <RowText>
             Присоединяйтесь к{" "}
             <a
-              href="https://t.me/goapsny"
+              href="https://t.me/goapsny_ais"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "var(--accent-9)" }}
