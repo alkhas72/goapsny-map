@@ -1,9 +1,10 @@
-import { DropdownMenu, IconButton, Theme } from "@radix-ui/themes";
+import { Button, DropdownMenu, IconButton, Theme } from "@radix-ui/themes";
 import { supportedLanguageTagsOptions } from "@sozialhelden/core";
 import { t } from "~/modules/i18n/utils/tFunction";
 import { MapPinPlus, Menu, Moon, Sun, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { signIn, useSession } from "next-auth/react";
 import { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import { useExpertMode } from "~/hooks/useExpertMode";
@@ -63,6 +64,7 @@ export default function Navigation() {
   useEffect(() => setIsOpen(false), [pathName]);
 
   const { primaryLink, linksInDropdownMenu } = useNavigation();
+  const { status } = useSession();
 
   const menuLinkElements = useMemo(
     () =>
@@ -128,8 +130,6 @@ export default function Navigation() {
           )}
           {isExpertMode && <DropdownMenu.Separator />}
           {menuLinkElements}
-          <DropdownMenu.Separator />
-          <SessionElement asMenuItem />
         </StyledDropdownMenuContent>
       </DropdownMenu.Root>
     </Theme>
@@ -145,6 +145,12 @@ export default function Navigation() {
     <StyledNav aria-label="Меню">
       {primaryLinkElement}
       {!isSmallViewport && <DarkModeToggle />}
+      {status === "unauthenticated" && (
+        <Button size="2" onClick={() => signIn("osm")}>
+          Войти
+        </Button>
+      )}
+      {status === "authenticated" && <SessionElement asMenuItem={false} />}
       {dropdownMenuButton}
     </StyledNav>
   );
