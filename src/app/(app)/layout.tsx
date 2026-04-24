@@ -1,6 +1,7 @@
 "use client";
 
 import { HotkeysProvider } from "@blueprintjs/core";
+import { SessionProvider } from "next-auth/react";
 import type { ReactNode } from "react";
 import TopBar from "~/app/(app)/_components/TopBar";
 import { ExpertModeContextProvider } from "~/hooks/useExpertMode";
@@ -15,10 +16,8 @@ import SWRConfigProvider from "~/needs-refactoring/lib/fetchers/SWRConfigProvide
  * and additional context providers for the app.
  */
 export default function AppLayout({ children }: { children: ReactNode }) {
-  // TODO: add back session provider
-
   return (
-    <>
+    <SessionProvider>
       <AppStateContextProvider>
         <NeedsContextProvider>
           <HotkeysProvider>
@@ -33,6 +32,6 @@ export default function AppLayout({ children }: { children: ReactNode }) {
         </NeedsContextProvider>
       </AppStateContextProvider>
       <ToastContainer />
-    </>
+    </SessionProvider>
   );
 }
