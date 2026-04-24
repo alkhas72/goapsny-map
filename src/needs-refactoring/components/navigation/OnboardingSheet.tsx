@@ -65,11 +65,13 @@ const Row = styled.div`
   margin-bottom: 16px;
 `;
 
-const Icon = styled.div`
-  font-size: 22px;
-  line-height: 1;
+const Bullet = styled.div`
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-9);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 6px;
 `;
 
 const RowText = styled.div`
@@ -107,23 +109,38 @@ export default function OnboardingSheet() {
     <Overlay onClick={dismiss}>
       <Sheet onClick={(e) => e.stopPropagation()}>
         <Handle />
-        <Title>Добро пожаловать в GoApsny</Title>
+        <Title>Добро пожаловать!</Title>
         <Description>
-          Первая карта доступности Абхазии. Создаётся жителями для жителей.
+          Карта доступности Абхазии. Создаётся людьми для людей.
         </Description>
 
         <Row>
-          <Icon>🗺️</Icon>
+          <Bullet />
           <RowText>
-            <strong>Хочешь просто смотреть</strong> — ничего не нажимай, карта
-            уже открыта.
+            Находите объекты на карте и узнавайте их статус — доступно, частично
+            доступно или недоступно.
           </RowText>
         </Row>
         <Row>
-          <Icon>✏️</Icon>
+          <Bullet />
           <RowText>
-            <strong>Хочешь добавлять и оценивать места</strong> — нажми «Войти».
-            Это бесплатно и займёт минуту.
+            Хотите добавить объект или оставить комментарий? Нажмите «Войти» —
+            регистрация бесплатна и займёт около минуты.
+          </RowText>
+        </Row>
+        <Row>
+          <Bullet />
+          <RowText>
+            Присоединяйтесь к{" "}
+            <a
+              href="https://t.me/goapsny"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--accent-9)" }}
+            >
+              сообществу волонтёров в Telegram
+            </a>
+            .
           </RowText>
         </Row>
 
