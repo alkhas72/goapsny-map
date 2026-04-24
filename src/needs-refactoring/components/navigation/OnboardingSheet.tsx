@@ -129,7 +129,7 @@ export default function OnboardingSheet() {
 
         <Flex gap="3" direction="column" style={{ marginTop: 8 }}>
           <Button size="3" onClick={handleSignIn} style={{ width: "100%" }}>
-            Войти через OpenStreetMap
+            Войти и добавлять места
           </Button>
           <Button
             size="3"
